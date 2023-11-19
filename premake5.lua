@@ -1,4 +1,4 @@
-project "yaml-cpp"
+project "yamlcpp"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
@@ -18,6 +18,11 @@ project "yaml-cpp"
 	includedirs
 	{
 		"include"
+	}
+	
+	defines
+	{
+		"YAML_CPP_STATIC_DEFINE"
 	}
 	
 	filter "system:windows"
